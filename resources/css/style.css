@@ -64,6 +64,10 @@ header nav ul {
   list-style-type: none;
 }
 
+.content a{
+    text-decoration: none;
+}
+
 nav li {
   padding-left: 3.5rem;
 }
@@ -73,6 +77,7 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 header .icon {
@@ -223,7 +228,6 @@ header .mobile {
 /* Features Section */
 
 #features-section {
-  border: red solid 2px;
   display: flex;
   justify-content: space-between;
   padding: 4rem 5%;
@@ -237,10 +241,21 @@ header .mobile {
   background-color: white;
 }
 
-.feature .image-container {
-  border: solid red 2px;
-  width: 90%;
-  height: 65%;
+#image-container1 {
+  width: 400px;
+  height: 294px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/feature-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+#image-container2 {
+  width: 400px;
+  height: 294px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/feature-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   margin: 0 auto;
 }
 
@@ -287,7 +302,6 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  border: solid red 2px;
   padding: 4rem 0;
   background-color: #4a4a4a;
 }
@@ -295,7 +309,7 @@ header .mobile {
 #filters-section .content {
   padding: 0 .625rem;
   margin-bottom: 5rem;
-  border: solid blue 2px;
+  width: 98%;
 }
 
 #filters-section .content h2 {
@@ -316,7 +330,30 @@ header .mobile {
   padding: 0 1%;
   display: flex;
   flex-direction: row;
+}
 
+.imcont {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 305px;
+  height: 288px;
+}
+
+#image-container3 {
+  margin-left: 0.75rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-1.png");
+}
+
+#image-container4 {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-2.png");
+}
+
+#image-container5 {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-3.png");
+}
+
+#image-container6 {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/filter-4.png");
 }
 
 @media only screen and (max-width: 760px) {
@@ -353,14 +390,16 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  height: 190px;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
+  margin-top: 80px;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
@@ -368,7 +407,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
